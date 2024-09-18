@@ -1,15 +1,18 @@
-# Program Perkenalan Diri 1
+# Program Perkenalan 2
 
-def perkenalan(nama, umur, hobi):
-    print(f"Halo! Nama saya {nama}.")
-    print(f"Saya berusia {umur} tahun.")
-    print(f"Saya suka {hobi}.")
+def perkenalan_lengkap(nama, umur, kota):
+    print(f"Halo, {nama}! Senang bertemu denganmu.")
+    if int(umur) < 18:
+        print(f"Wow, {nama}! Kamu masih muda dengan usia {umur} tahun.")
+    else:
+        print(f"Luar biasa, {nama}. {umur} tahun adalah usia yang penuh potensi!")
+    print(f"Kota asalmu {kota} pasti tempat yang menyenangkan.")
 
 # Input dari pengguna
 nama = input("Masukkan nama Anda: ")
 umur = input("Masukkan umur Anda: ")
-hobi = input("Masukkan hobi Anda: ")
+kota = input("Masukkan kota asal Anda: ")
 
-# Memanggil fungsi perkenalan
-perkenalan(nama, umur, hobi)
+# Memanggil fungsi perkenalan_lengkap
+perkenalan_lengkap(nama, umur, kota)
 
